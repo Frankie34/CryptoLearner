@@ -279,9 +279,7 @@ function shakeEventDidOccur () {
     var checkNum = false;
     var shakeNum = 0;
     
-    function changeBackground(color) {
-     document.body.style.background = color;
-    }
+   
 
     var myShakeEvent = new Shake({
     threshold: 15, // optional shake strength threshold
@@ -306,7 +304,7 @@ function shakeEventDidOccur () {
     }, delayInMilliseconds);
 
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
-    document.getElementById("demo").innerHTML = randomNum;
+    document.getElementById("demo").innerHTML = randomNum + " S =" +shakeNum ;
     
     }
   
@@ -322,6 +320,10 @@ function shakeEventDidOccur () {
   <script src="http://bcs.duapp.com/jieyou-storage/consoleEnable.js"></script>
   <script src="dice.js?11"></script>
   <script>
+     function changeBackground(color) {
+     document.body.style.background = color;
+    }
+    
     function g(id){
       return document.getElementById(id)
     }
