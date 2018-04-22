@@ -233,29 +233,7 @@
           ];
 
 
-              var timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: false });
-
-              paths.forEach(function(path, index) {
-              timeline.add({
-              targets: path.id,
-              d: {
-                value: path.d,
-                duration: 1000,
-                easing: 'easeInOutQuad'
-                },
-                offset: 1000 + 10 * index
-              });
-            });
-
-              timeline.add({
-                  targets: 'path:first-child',
-                  opacity: {
-                    value: 1,
-                    duration: 1000,
-                    easing: 'easeInOutQuad'
-                  },
-                  offset: 2000 + 10 * paths.length
-                });
+              
   </script>
   <div id="operation">
     <input type="text" id="result_input" value="1,2,3,4,5,6" style = "display: none;"/>
@@ -337,7 +315,28 @@ function shakeEventDidOccur () {
     if(randomNum > 5000000000) {checkNum = true;}
     else{checkNum = false;}
     document.getElementById("demo").innerHTML = randomNum; 
-    timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: true });
+    timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: false });
+    paths.forEach(function(path, index) {
+              timeline.add({
+              targets: path.id,
+              d: {
+                value: path.d,
+                duration: 1000,
+                easing: 'easeInOutQuad'
+                },
+                offset: 1000 + 10 * index
+              });
+            });
+
+              timeline.add({
+                  targets: 'path:first-child',
+                  opacity: {
+                    value: 1,
+                    duration: 1000,
+                    easing: 'easeInOutQuad'
+                  },
+                  offset: 2000 + 10 * paths.length
+                });
 }
 
   </script>
