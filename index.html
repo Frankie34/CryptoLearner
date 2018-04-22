@@ -277,6 +277,7 @@ function shakeEventDidOccur () {
   <script>
     var randomNum;
     var checkNum = false;
+    var shakeNum = 0;
 
 
     var myShakeEvent = new Shake({
@@ -291,9 +292,10 @@ function shakeEventDidOccur () {
 function shakeEventDidOccur () {
 
     //put your own code here etc.
+    shakeNum += 1;
     $(this).delay(8000).show('slow'); 
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
-    document.getElementById("demo").innerHTML = randomNum;
+    document.getElementById("demo").innerHTML = randomNum + "shakeNum = " + shakeNum;
     }
   
     
