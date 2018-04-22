@@ -355,6 +355,9 @@ function shakeEventDidOccur () {
     })
     on(g('stop'),'click',function(){
       myDice.stop()
+      if(shakeNum >= 10){
+      changeBackground('#96E8BC');
+    }
     })
 
     
@@ -374,9 +377,7 @@ function shakeEventDidOccur () {
     myDice.roll(g('result_input').value.split(','))
     shakeNum += 1; 
   
-  if(shakeNum >= 10){
-      changeBackground('#96E8BC');
-    }
+  
 
 }
 
