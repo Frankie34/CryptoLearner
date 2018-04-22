@@ -233,7 +233,7 @@
           ];
 
 
-              var timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: true });
+              var timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: false });
 
               paths.forEach(function(path, index) {
               timeline.add({
@@ -337,6 +337,7 @@ function shakeEventDidOccur () {
     if(randomNum > 5000000000) {checkNum = true;}
     else{checkNum = false;}
     document.getElementById("demo").innerHTML = randomNum; 
+    timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: false });
 }
 
   </script>
