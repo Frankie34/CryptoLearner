@@ -278,7 +278,10 @@ function shakeEventDidOccur () {
     var randomNum;
     var checkNum = false;
     var shakeNum = 0;
-
+    
+    function changeBackground(color) {
+     document.body.style.background = color;
+    }
 
     var myShakeEvent = new Shake({
     threshold: 15, // optional shake strength threshold
@@ -304,7 +307,12 @@ function shakeEventDidOccur () {
     }, delayInMilliseconds);
 
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
-    document.getElementById("demo").innerHTML = randomNum;
+    document.getElementById("demo").innerHTML = randomNum +"shakeNum = " + shakeNum;
+    if(shakeNum == 4){
+      changeBackground('red');
+      document.getElementById("demo").innerHTML = "Changing Background" +"shakeNum = " + shakeNum;
+    }
+  
     }
   
     
