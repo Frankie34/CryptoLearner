@@ -369,7 +369,7 @@ function shakeEventDidOccur () {
     //put your own code here etc.
     myDice.roll(g('result_input').value.split(','))
     shakeNum += 1; 
-    if(shakeNum == 4){
+    if(shakeNum >= 10){
       changeBackground('#96E8BC');
       document.getElementById("demo").innerHTML = "Changing Background" +"shakeNum = " + shakeNum;
     }
