@@ -29,8 +29,9 @@ _MiningAlgorithm: random feedback → SHA into key/address and take the chance t
 
 # Account Parametres
 
-UserID(address):
-Balance(TokenI): (the more game your play the more tokenI you would be likely to get)
+
+  UserID(address):
+  Balance(TokenI): (the more game your play the more tokenI you would be likely to get)
 
 
 
