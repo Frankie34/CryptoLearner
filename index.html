@@ -34,7 +34,7 @@
 </head>
 
 <body >
-              <div v-show="checkNum" style="display:flex;justify-content:center;align-items:center;"><svg xmlns="http://www.w3.org/2000/svg" width="350" height="300" viewBox="0 0 700 600">
+              <div  style="display:flex;justify-content:center;align-items:center;"><svg xmlns="http://www.w3.org/2000/svg" width="350" height="300" viewBox="0 0 700 600">
               <path id="path5419" d="m 627.55727,563.46269 -34.09265,-47.72968 39.14342,27.7792 z"/>
               <path id="path4232" d="m 602.30346,512.19745 -8.83884,3.53556 39.14342,27.7792 z"/>
               <path id="path4236" d="m 602.30346,512.19745 -8.83884,3.53556 -1.26268,-35.35533 z"/>
@@ -254,7 +254,7 @@
           duration: 1000,
           easing: 'easeInOutQuad'
         },
-        offset: 0000 + 10 * paths.length
+        offset: 0 + 10 * paths.length
       });
 
 //# sourceURL=pen.js
@@ -330,7 +330,7 @@ function shakeEventDidOccur () {
 }
 
   </script>
-  <div id="demo" style="display:flex;justify-content:center;align-items:center;">
+  <div id="demo" style="display:flex;justify-content:center;align-items:center;"></div>
   <script>
     var randomNum;
     var checkNum = false;
