@@ -292,8 +292,16 @@ function shakeEventDidOccur () {
 function shakeEventDidOccur () {
 
     //put your own code here etc.
+<<<<<<< HEAD
     shakeNum += 1;
     $(this).delay(8000).show('slow'); 
+=======
+    var delayInMilliseconds = 1000; //1 second
+
+    setTimeout(function() {
+    //your code to be executed after 1 second
+    }, delayInMilliseconds);
+>>>>>>> c960e8807dd39063a48802a9f9152497297aba95
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
     document.getElementById("demo").innerHTML = randomNum + "shakeNum = " + shakeNum;
     }
