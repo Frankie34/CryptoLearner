@@ -302,8 +302,10 @@ function shakeEventDidOccur () {
     setTimeout(function() {
     //your code to be executed after 1 second
     }, delayInMilliseconds);
-
-    randomNum = (Math.floor(Math.random()*1000000000) + 1);
+    
+    setTimeout(function(){
+              randomNum = (Math.floor(Math.random()*1000000000) + 1);
+         },2000);
     document.getElementById("demo").innerHTML = randomNum + " S =" +shakeNum ;
     
     }
