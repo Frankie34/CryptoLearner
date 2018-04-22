@@ -298,8 +298,7 @@ function shakeEventDidOccur () {
     //put your own code here etc.
 
 
-    shakeNum += 1; 
-
+    
     var delayInMilliseconds = 1000; //1 second
 
     setTimeout(function() {
@@ -307,12 +306,8 @@ function shakeEventDidOccur () {
     }, delayInMilliseconds);
 
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
-    document.getElementById("demo").innerHTML = randomNum +"shakeNum = " + shakeNum;
-    if(shakeNum == 4){
-      changeBackground('red');
-      document.getElementById("demo").innerHTML = "Changing Background" +"shakeNum = " + shakeNum;
-    }
-  
+    document.getElementById("demo").innerHTML = randomNum;
+    
     }
   
     
@@ -373,6 +368,13 @@ function shakeEventDidOccur () {
 
     //put your own code here etc.
     myDice.roll(g('result_input').value.split(','))
+    shakeNum += 1; 
+    if(shakeNum == 4){
+      changeBackground('red');
+      document.getElementById("demo").innerHTML = "Changing Background" +"shakeNum = " + shakeNum;
+    }
+  
+
 }
 
   </script>
