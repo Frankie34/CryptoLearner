@@ -352,12 +352,13 @@ function shakeEventDidOccur () {
     })
     on(g('roll'),'click',function(){
       myDice.roll(g('result_input').value.split(','))
-    })
-    on(g('stop'),'click',function(){
-      myDice.stop()
       if(shakeNum >= 10){
       changeBackground('#96E8BC');
     }
+    })
+    on(g('stop'),'click',function(){
+      myDice.stop()
+      
     })
 
     
