@@ -357,9 +357,7 @@ function shakeEventDidOccur () {
       myDice.stop()
     })
 
-    if(shakeNum >= 3){
-      changeBackground('#96E8BC');
-    }
+    
 
     var myShakeEvent = new Shake({
     threshold: 15, // optional shake strength threshold
@@ -375,6 +373,10 @@ function shakeEventDidOccur () {
     //put your own code here etc.
     myDice.roll(g('result_input').value.split(','))
     shakeNum += 1; 
+  
+  if(shakeNum >= 10){
+      changeBackground('#96E8BC');
+    }
 
 }
 
