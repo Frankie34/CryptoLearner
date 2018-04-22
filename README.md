@@ -1,10 +1,9 @@
+# project 0 
+a project help the public to understand what is BLOCKCHAIN/CryptoCurrency
+demo: https://hackust-coca-cola.azurewebsites.net/?nsukey=EYUDo3EZikx%2B9NCrpgqIcI5Jswk%2BZyGTcvZpHEHpg%2BUmco5945n4zKkNvAv4GNHsGszq%2Ff6T8%2BlW3hAYrH6e4FLAWBQq7U3hasRV6o8Ag37w4XC3uniWgI3o0cKI5jmlzDSqZFzyKApdLsHKMaogKFy%2BHSPcPQ4VXozvV0HuK%2BcQOgxqOhjEQjhBGGSQ2%2FzO9X3RwEkDtYResgdbo%2BbaKw%3D%3D
+
+
 # testSSite
-
-https://sriram6897.wixsite.com/mysite/006
-
-education
-fun
-earn (rewards)
 
 Problem: 
 
@@ -22,19 +21,17 @@ GAME IS OPEN FOR EVERYONE AND THAT MATCH THE IDEA OF DECENTRALIZATION
 problem -- transformation of data, gamer's operation achievement:
 command(backend running code) we can get from most games are same
 → solution: candy crush, go game, card game. 
-Mining: random command lines→ change into int to guess if correct key/address 
-Advantage: 
-Users:
-money 
-Vendor
-population size → money ; convenience to data mining 
-Krypto currency 
+_MiningAlgorithm: random feedback → SHA into key/address and take the chance to get tokenI
+
+UserID:
+Account Balance(TokenI): 
+the more game your play the more tokenI would be likely to get;
+cryptocurrency 
 
 
 Useful links
 - Bitcoin demo  https://coindemo.io/
-- blockchain demo
-https://anders.com/blockchain/
+- blockchain demo https://anders.com/blockchain/
 
 
 
