@@ -272,6 +272,29 @@ function shakeEventDidOccur () {
     setTimeout(()=>{timeline.pause()},2000)
 }
   </script>
+  <div id="demo" style="display:flex;justify-content:center;align-items:center;"></div>
+  <script>
+    var randomNum;
+    var checkNum = false;
+
+
+    var myShakeEvent = new Shake({
+    threshold: 15, // optional shake strength threshold
+    timeout: 1000 // optional, determines the frequency of event generation
+});
+    myShakeEvent.start();
+
+    window.addEventListener('shake', shakeEventDidOccur, false);
+
+//function to call when shake occurs
+function shakeEventDidOccur () {
+
+    //put your own code here etc.
+    randomNum = (Math.floor(Math.random()*1000000000) + 1);
+    document.getElementById("demo").innerHTML = randomNum; 
+    
+
+  </script>
   <div id="operation">
     <input type="text" id="result_input" value="1,2,3,4,5,6" style = "display: none;"/>
     <button id="roll" style = "display: none;">roll</button>
@@ -330,30 +353,6 @@ function shakeEventDidOccur () {
 }
 
   </script>
-  <div id="demo" style="display:flex;justify-content:center;align-items:center;"></div>
-  <script>
-    var randomNum;
-    var checkNum = false;
-
-
-    var myShakeEvent = new Shake({
-    threshold: 15, // optional shake strength threshold
-    timeout: 1000 // optional, determines the frequency of event generation
-});
-    myShakeEvent.start();
-
-    window.addEventListener('shake', shakeEventDidOccur, false);
-
-//function to call when shake occurs
-function shakeEventDidOccur () {
-
-    //put your own code here etc.
-    randomNum = (Math.floor(Math.random()*1000000000) + 1);
-    if(randomNum > 5000000000) {checkNum = true;}
-    else{checkNum = false;}
-    document.getElementById("demo").innerHTML = randomNum; 
-    
-
-  </script>
+  
 </body>
 </html>
