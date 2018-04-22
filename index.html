@@ -6,6 +6,7 @@
   <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="jQuery.js"></script>
 
     <script src="shake.js"></script>
   <style>
@@ -288,11 +289,13 @@ function shakeEventDidOccur () {
 
 //function to call when shake occurs
 function shakeEventDidOccur () {
-    $(this).delay(8000).show('slow'); 
+
     //put your own code here etc.
+    $(this).delay(8000).show('slow'); 
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
     document.getElementById("demo").innerHTML = randomNum;
     }
+  
     
 
   </script>
