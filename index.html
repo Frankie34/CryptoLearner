@@ -288,12 +288,11 @@ function shakeEventDidOccur () {
 
 //function to call when shake occurs
 function shakeEventDidOccur () {
-
+    $(this).delay(8000).show('slow'); 
     //put your own code here etc.
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
     document.getElementById("demo").innerHTML = randomNum;
     }
-    $("#demo").delay(8000).show('slow'); 
     
 
   </script>
