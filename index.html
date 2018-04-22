@@ -290,13 +290,7 @@ function shakeEventDidOccur () {
 function shakeEventDidOccur () {
 
     //put your own code here etc.
-    var x = 1;
-var y = null; // To keep under proper scope
-
-setTimeout(function() {
-    x = x * 3 + 2;
-    y = x / 2;
-}, 1500);
+    WaitAndDoNothing(2000);
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
     document.getElementById("demo").innerHTML = randomNum;
     } 
