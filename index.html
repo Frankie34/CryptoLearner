@@ -273,7 +273,6 @@ function shakeEventDidOccur () {
 }
   </script>
   <div id="demo" style="display:flex;justify-content:center;align-items:center;  font-family: 'Helvetica Neue', sans-serif; font-size: 46px; font-weight: 100;"></div>
-  $(this).delay(8000).show('slow');
   <script>
     var randomNum;
     var checkNum = false;
@@ -293,7 +292,8 @@ function shakeEventDidOccur () {
     //put your own code here etc.
     randomNum = (Math.floor(Math.random()*1000000000) + 1);
     document.getElementById("demo").innerHTML = randomNum;
-    } 
+    }
+    $(this).delay(8000).show('slow'); 
     
 
   </script>
