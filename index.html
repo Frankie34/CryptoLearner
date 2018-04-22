@@ -275,7 +275,7 @@ function shakeEventDidOccur () {
   </script>
   <div id="demo" style="display:flex;justify-content:center;align-items:center;  font-family: 'Helvetica Neue', sans-serif; font-size: 46px; font-weight: 100;"></div>
   <script>
-    var randomNum;
+    var randomNum = 88888888;
     var checkNum = false;
     var shakeNum = 0;
     
@@ -297,15 +297,12 @@ function shakeEventDidOccur () {
 
 
     
-    var delayInMilliseconds = 1000; //1 second
+    var delayInMilliseconds = 2000; //1 second
 
     setTimeout(function() {
-    //your code to be executed after 1 second
+    randomNum = (Math.floor(Math.random()*1000000000) + 1);//your code to be executed after 1 second
     }, delayInMilliseconds);
-    
-    setTimeout(function(){
-              randomNum = (Math.floor(Math.random()*1000000000) + 1);
-         },2000);
+   
     document.getElementById("demo").innerHTML = randomNum ;
     
     }
