@@ -37,3 +37,5 @@ Useful links
 - Bitcoin demo  https://coindemo.io/
 - blockchain demo https://anders.com/blockchain/
 
+thx
+
